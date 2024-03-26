@@ -9,6 +9,7 @@ html {
 body {
   background: #eee;
   padding: 0 16px;
+  overflow: hidden;
 }
 
 header {
@@ -99,4 +100,27 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 16px;
+  }
+
+  footer {
+    position: static;
+    text-align: center;
+  }
+
+  .note {
+    width: calc(100% - 32px);
+    margin: 16px auto;
+    float: none;
+  }
+
+  form {
+    width: calc(100% - 32px);
+    margin: 30px auto 20px auto;
+  }
 }
